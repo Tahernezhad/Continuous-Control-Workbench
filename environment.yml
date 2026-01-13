@@ -1,0 +1,37 @@
+name: rl
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  # Core Python & System dependencies
+  - python=3.10
+  - pip
+  - swig                # Often needed for building Gym environments
+  - box2d-py=2.3.8      # Critical: Physics engine
+  - ffmpeg              # Recommended for recording video (Gymnasium wrapper)
+
+  # Python Packages
+  - pip:
+    # --- Deep Learning (PyTorch) ---
+    - torch==2.8.0
+    - torchvision==0.23.0
+    - tensorboard==2.20.0
+
+    # --- Reinforcement Learning Core ---
+    - gymnasium==1.2.0
+    - stable-baselines3==2.7.0
+    - finrl==0.3.7
+    
+    # --- Data Science & Finance ---
+    - numpy==2.2.6
+    - pandas==2.3.2
+    - matplotlib==3.10.6
+    - yfinance==0.2.66
+    - scikit-learn==1.7.1
+    - scipy==1.15.3
+
+    # --- Utilities ---
+    - moviepy==2.2.1
+    - pygame==2.6.1     # Required for rendering Gym environments
+    - pyyaml            # Helpful for config files
+    - tqdm              # Progress bars

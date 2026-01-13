@@ -1,0 +1,45 @@
+# Python Standard
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info
+.eggs/
+
+# Virtual Environments
+venv/
+env/
+.env
+.venv/
+
+# IDE & OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Project Artifacts
+*/results/
+results/
+
+# Ignore generated replay videos
+*/replay_videos/
+replay_videos/
+*.mp4
+
+# Models & Checkpoints
+*.pth
+*.pt
+
+# Allow keeping specific pre-trained models if it's moved to assets
+!assets/*.pth
+
+# Logs & Data
+training_log.csv
+hyperparameters.txt
+runs/
+.ipynb_checkpoints/
+
+# Documentation Assets
+!assets/
