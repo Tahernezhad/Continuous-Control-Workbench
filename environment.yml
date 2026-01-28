@@ -6,7 +6,7 @@ dependencies:
   # Core Python & System dependencies
   - python=3.10
   - pip
-  - swig                # Often needed for building Gym environments
+  - swig                # For building Gym environments
   - box2d-py=2.3.8      # Critical: Physics engine
   - ffmpeg              # Recommended for recording video (Gymnasium wrapper)
 
@@ -35,3 +35,8 @@ dependencies:
     - pygame==2.6.1     # Required for rendering Gym environments
     - pyyaml            # Helpful for config files
     - tqdm              # Progress bars
+      
+    # --- Testing ---
+    - pytest            # The core testing framework
+    - pytest-cov        # For measuring code coverage
+    - pytest-mock       # For mocking environment interactions
